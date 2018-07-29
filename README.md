@@ -1,9 +1,3 @@
-kraken-api-client
-=================
+## Examples
 
-Example client libraries for use with the kraken.com API.
-
- php/:
-  Kraken authored PHP client library.
-
-For python, see the third party authored https://github.com/veox/python3-krakenex
+See [https://www.kraken.com/help/api](https://www.kraken.com/help/api) for more info.
