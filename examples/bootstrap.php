@@ -12,6 +12,6 @@ $kraken = new KrakenAPI(
     getenv('KRAKEN_API_KEY'),
     getenv('KRAKEN_API_SECRET'),
     getenv('KRAKEN_API_URL'),
-    getenv('KRAKEN_API_VERSION'),
-    getenv('KRAKEN_API_SSL_VERIFY')
+    0, // version
+    filter_var(getenv('KRAKEN_API_SSL_VERIFY'), FILTER_VALIDATE_BOOLEAN)
 );
