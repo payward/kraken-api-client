@@ -25,7 +25,7 @@ Via composer:
     KRAKEN_API_SECRET="your api secret"
     KRAKEN_API_SSL_VERIFY=true
 
-> **Remember**: The `KRAKEN_API_SSL_VERIFY` variable is evaluated to `false` if not included in the `.env.dev` file, as it discussed at [Detect and convert types #104](https://github.com/vlucas/phpdotenv/issues/104).
+> The `KRAKEN_API_SSL_VERIFY` variable is evaluated to `false` if not included in the `.env.dev` file, as it discussed at [Detect and convert types #104](https://github.com/vlucas/phpdotenv/issues/104)
 
 ### 3. Instantiation
 
@@ -47,7 +47,7 @@ $kraken = new KrakenAPI(
 );
 ```
 
-> **Remember**: `vlucas/phpdotenv` parses boolean variables as strings, as it discussed at [Detect and convert types #104](https://github.com/vlucas/phpdotenv/issues/104). So, it is recommended to use `filter_var` with `getenv('KRAKEN_API_SSL_VERIFY')`.
+> `vlucas/phpdotenv` parses boolean variables as strings, as it discussed at [Detect and convert types #104](https://github.com/vlucas/phpdotenv/issues/104). So, it is recommended to use `filter_var` with `getenv('KRAKEN_API_SSL_VERIFY')`
 
 ### 3. Examples
 
