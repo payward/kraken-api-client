@@ -49,7 +49,7 @@ $kraken = new KrakenAPI(
 
 > `vlucas/phpdotenv` parses boolean variables as strings, as it discussed at [Detect and convert types #104](https://github.com/vlucas/phpdotenv/issues/104). So, it is recommended to use `filter_var` with `getenv('KRAKEN_API_SSL_VERIFY')`
 
-### 3. Examples
+### 4. Examples
 
 Fetch the list of active assets and their properties:
 
