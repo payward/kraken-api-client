@@ -3,7 +3,7 @@
 require __DIR__.'/bootstrap.php';
 
 $res = $kraken->QueryPublic('Trades', [
-    'pair' => 'XBTCZEUR',
+    'pair' => 'XBTEUR',
     'since' => '137589964200000000'
 ]);
 

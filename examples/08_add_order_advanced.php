@@ -1,12 +1,12 @@
 <?php
 
-require __DIR__.'/../bootstrap.php';
+require __DIR__.'/bootstrap.php';
 
 $res = $kraken->QueryPrivate('AddOrder', [
     'pair' => 'XBTUSD',
     'type' => 'buy',
     'ordertype' => 'limit',
-    'price' => '101.5',
+    'price' => '101.9',
     'volume' => '2.12345678',
     'leverage' => '2:1',
     'close' => [
