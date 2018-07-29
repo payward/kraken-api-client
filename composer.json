@@ -1,10 +1,15 @@
 {
-  "name": "payward/kraken-api-client",
-  "type": "library",
-  "description": "PHP Api for Kraken.com",
-  "keywords": ["kraken"],
-  "license": "MIT",
-  "autoload": {
-    "classmap": ["php/KrakenAPIClient.php"]
-  }
+    "name": "payward/kraken-api-client",
+    "type": "library",
+    "description": "PHP Api for Kraken.com",
+    "keywords": ["kraken"],
+    "license": "MIT",
+    "require": {
+        "vlucas/phpdotenv": "^2.5"
+    },
+    "autoload": {
+        "psr-4": {
+        "Payward\\": "src/"
+        }
+    }
 }
